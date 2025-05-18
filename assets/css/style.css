@@ -25,7 +25,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
-    padding-top: 60px;
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(rgb(59, 161, 205), rgb(21, 114, 183));
     border-image-slice: 1;
@@ -78,4 +77,63 @@ body {
     border-image: linear-gradient(rgb(59, 161, 205), rgb(21, 114, 183));
     border-image-slice: 1;
     padding: 1rem 2rem;
+}
+
+#course-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 792px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#course-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(51, 168, 219);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.modules-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.modules-list .module {
+    background-color: rgb(37, 37, 37);
+    border: 1px solid rgb(51, 168, 219);
+    padding: 1rem 3.5rem;
+    border-radius: 3.5rem;
+    box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+}
+
+.module span {
+    color: rgb(51, 168, 219);
+}
+
+#transform-world {
+    display: grid;
+    align-items: center;
+    height: 364px;
+    background: url("../images/woman-code.png") center / cover fixed;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(rgb(59, 161, 205), rgb(21, 114, 183));
+    border-image-slice: 1;
+}
+
+#transform-world p {
+    width: 244px;
+    height: 142px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: lowercase;
+    margin-left: 128px;
+    text-shadow: 3px 2px rgb(51, 168, 219);
 }
